@@ -13,7 +13,7 @@ func main() {
 }
 
 // Big 65 - 90, A - Z
-// Low 97 - 122, a - z
+// Small 97 - 122, a - z
 func ReverseSentence(w string) string {
 	x := strings.Split(w, " ")
 	var y []string
