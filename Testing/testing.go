@@ -6,6 +6,21 @@ import (
 	"strings"
 )
 
+func FactorialRecursive(n int) int {
+	if n == 0 {
+		return 1
+	}
+	return n * FactorialRecursive(n-1)
+}
+
+func Factorial(n int) int {
+	x := 1
+	for i := 1; i <= n; i++ {
+		x = x * i
+	}
+	return x
+}
+
 func FindMiddleLetter(a, b string) string {
 	if len(a) > 1 || len(b) > 1 {
 		return "Single string input (\"A\",\"Z\")"
